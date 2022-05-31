@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
-import { users } from '../routes/users.js';
+
+let users = [];
 
 export const createUser = (req, res) => {
   // push new user

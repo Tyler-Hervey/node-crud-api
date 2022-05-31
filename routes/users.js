@@ -2,18 +2,15 @@ import express from "express";
 
 const router = express.Router();
 
-import { 
-    createUser, 
-    getUsers, 
-    getUser, 
-    deleteUser, 
-    updateUser } 
-    from "../controllers/users.js";
-
+import {
+  createUser,
+  getUsers,
+  getUser,
+  deleteUser,
+  updateUser,
+} from "../controllers/users.js";
 
 // all routes here are starting with /users
-
-export let users = [];
 
 router.get("/", getUsers);
 
